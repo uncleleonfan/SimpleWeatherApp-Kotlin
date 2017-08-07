@@ -22,5 +22,7 @@ class MainActivity : AppCompatActivity(), ToolbarManager{
         forecastList.setHasFixedSize(true)
         forecastList.layoutManager = LinearLayoutManager(this)
         forecastList.adapter = ForecastListAdapter()
+
+        attachScroll(forecastList)
     }
 }
